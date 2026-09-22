@@ -80,7 +80,7 @@ Central sector infrastructure projects often encounter unforeseen bottlenecks, s
 | :--- | :--- | :--- |
 | 👑 **Team Leader** | **Charitarth Zinzuwadiya** | [charitarthz](https://github.com/charitarthz) |
 | 🧑‍💻 **Team Member** | **Abhay Jagatiya** | [Abhay](https://github.com/AbhayJagatiya) |
-| 🧑‍💻 **Team Member** | | [@member3](https://github.com/) |
+| 🧑‍💻 **Team Member** | **Vansh Ghanchi**| [Vansh](https://github.com/Vansh-Ghanchi) |
 | 🧑‍💻 **Team Member** | | [@member4](https://github.com/) |
 | 🧑‍💻 **Team Member** | | [@member5](https://github.com/) |
 | 🧑‍💻 **Team Member** | | [@member6](https://github.com/) |
