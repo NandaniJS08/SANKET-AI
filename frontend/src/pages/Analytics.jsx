@@ -261,8 +261,8 @@ export default function Analytics({ user }) {
           <BarChart data={ministryChartData} margin={{ left: -15, right: 5 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#F5F5F4" className="dark:opacity-10" vertical={false} />
             <XAxis dataKey="ministry" tick={{ fontSize: 10, fill: "#78716C" }} axisLine={false} tickLine={false} />
-            <YAxis yAxisId="left" tick={{ fontSize: 10, fill: "#A8A29E" }} axisLine={false} tickLine={false} domain={[0, 100]} />
-            <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 10, fill: "#A8A29E" }} axisLine={false} tickLine={false} domain={[0, 'dataMax + 50']} />
+            <YAxis yAxisId="left" tick={{ fontSize: 11, fill: "#F27F0C", fontWeight: 700 }} axisLine={false} tickLine={false} domain={[0, 100]} />
+            <YAxis yAxisId="right" orientation="right" tick={{ fontSize: 11, fill: "#429EBD", fontWeight: 700 }} axisLine={false} tickLine={false} domain={[0, 'dataMax + 50']} />
             <Tooltip
               contentStyle={{ borderRadius: 12, border: "1px solid #429EBD30", fontSize: 12, backgroundColor: "var(--color-surface, #fff)" }}
             />

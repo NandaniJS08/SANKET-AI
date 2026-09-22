@@ -114,8 +114,20 @@ class PredictionService:
                 "telemetry_inferred"
             )
 
-    def __init__(self):
-        self.predictor = _predictor
+    @property
+    def predictor(self):
+        global _predictor
+        if _predictor is None:
+            try:
+                ai_src = Path(settings.ML_ENGINE_PATH) / "src"
+                if str(ai_src) not in sys.path:
+                    sys.path.insert(0, str(ai_src))
+                from predict import get_predictor
+                _predictor = get_predictor()
+            except Exception as exc:
+                print(f"[PredictionService] Warning: AI Engine initialization notice: {exc}")
+                _predictor = None
+        return _predictor
 
     def _resolve_feature_mapping(self, project: Dict[str, Any]) -> Dict[str, Any]:
         """

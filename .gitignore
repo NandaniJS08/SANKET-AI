@@ -70,3 +70,4 @@ Ai_engine/models_backup_phase16/
 # Local Python virtual environment
 Ai_engine/venv/
 backend/venv/
+.venv/

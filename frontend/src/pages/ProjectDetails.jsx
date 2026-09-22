@@ -1237,8 +1237,16 @@ export default function ProjectDetails({ user }) {
                     <p className="text-[9px] text-[#78716C] dark:text-slate-400 mt-0.5">
                       {h.cumulativeExpenditureCr != null ? `₹${h.cumulativeExpenditureCr} Cr` : "—"}
                     </p>
-                    <span className="text-[9px] font-mono px-1.5 py-0.2 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 mt-1 inline-block">
-                      Risk: N/A
+                    <span className={`text-[9px] font-mono px-1.5 py-0.5 rounded font-bold mt-1 inline-block ${
+                      (h.riskLevel || prediction?.riskLevel) === "Critical"
+                        ? "bg-rose-100 text-rose-700 dark:bg-rose-950/60 dark:text-rose-300"
+                        : (h.riskLevel || prediction?.riskLevel) === "High"
+                        ? "bg-amber-100 text-amber-700 dark:bg-amber-950/60 dark:text-amber-300"
+                        : (h.riskLevel || prediction?.riskLevel) === "Medium"
+                        ? "bg-amber-50 text-amber-800 dark:bg-amber-900/40 dark:text-amber-200"
+                        : "bg-blue-100 text-blue-700 dark:bg-blue-950/60 dark:text-blue-300"
+                    }`}>
+                      Risk: {h.riskLevel || prediction?.riskLevel || "Monitored"}
                     </span>
                   </div>
                 ))}
