@@ -17,16 +17,29 @@ from app.core.config import settings
 from app.db.supabase import get_supabase
 from app.services.projects import project_service
 
-# Load DrishtiPredictor from ai_engine/src without modifying AI engine files
-ai_src = Path(settings.ML_ENGINE_PATH) / "src"
-if str(ai_src) not in sys.path:
-    sys.path.insert(0, str(ai_src))
+# Load DrishtiPredictor from Ai_engine/src
+import traceback as _tb
+
+_ML_ENGINE_PATH = Path(settings.ML_ENGINE_PATH)
+_ai_src = _ML_ENGINE_PATH / "src"
+
+print(f"[PredictionService] ML_ENGINE_PATH resolved to: {_ML_ENGINE_PATH.resolve()}")
+print(f"[PredictionService] ai_src resolved to: {_ai_src.resolve()}")
+print(f"[PredictionService] ai_src exists: {_ai_src.exists()}")
+print(f"[PredictionService] models dir exists: {(_ML_ENGINE_PATH / 'models').exists()}")
+
+if str(_ai_src) not in sys.path:
+    sys.path.insert(0, str(_ai_src))
 
 try:
     from predict import get_predictor
     _predictor = get_predictor()
+    print(f"[PredictionService] AI Engine loaded successfully. Predictor: {_predictor}")
 except Exception as exc:
-    print(f"[PredictionService] Warning: AI Engine initialization notice: {exc}")
+    print(f"[PredictionService] CRITICAL: AI Engine failed to initialize.")
+    print(f"[PredictionService] Exception type: {type(exc).__name__}")
+    print(f"[PredictionService] Exception detail: {exc}")
+    print(f"[PredictionService] Full traceback:\n{_tb.format_exc()}")
     _predictor = None
 
 
@@ -120,12 +133,17 @@ class PredictionService:
         if _predictor is None:
             try:
                 ai_src = Path(settings.ML_ENGINE_PATH) / "src"
+                print(f"[PredictionService.predictor] Retrying with path: {Path(settings.ML_ENGINE_PATH).resolve()}")
+                print(f"[PredictionService.predictor] ai_src exists: {ai_src.exists()}")
                 if str(ai_src) not in sys.path:
                     sys.path.insert(0, str(ai_src))
                 from predict import get_predictor
                 _predictor = get_predictor()
+                print(f"[PredictionService.predictor] Retry succeeded: {_predictor}")
             except Exception as exc:
-                print(f"[PredictionService] Warning: AI Engine initialization notice: {exc}")
+                print(f"[PredictionService.predictor] CRITICAL: Retry also failed.")
+                print(f"[PredictionService.predictor] Exception: {type(exc).__name__}: {exc}")
+                print(f"[PredictionService.predictor] Traceback:\n{_tb.format_exc()}")
                 _predictor = None
         return _predictor
 

@@ -37,10 +37,27 @@ class Settings:
     SUPABASE_KEY: str = os.getenv("SUPABASE_KEY", "")
 
     # AI/ML Engine Integration Path
-    ML_ENGINE_PATH: str = os.getenv(
-        "ML_ENGINE_PATH",
-        str(ROOT_DIR / "ai_engine")
-    )
+    # Checks multiple candidate locations so it works on:
+    # - Local dev (ROOT_DIR/Ai_engine)
+    # - Vercel monorepo root deployment (/var/task/Ai_engine)
+    # - Any path set explicitly via ML_ENGINE_PATH env var
+    @property
+    def ML_ENGINE_PATH(self) -> str:
+        env_val = os.getenv("ML_ENGINE_PATH", "")
+        if env_val:
+            return env_val
+        # Try candidates in priority order
+        candidates = [
+            ROOT_DIR / "Ai_engine",          # monorepo root/Ai_engine  (local + Vercel root deploy)
+            ROOT_DIR / "ai_engine",          # lowercase fallback
+            BASE_DIR / "Ai_engine",          # backend/Ai_engine (unlikely but safe)
+            Path("/var/task/Ai_engine"),     # Vercel absolute path
+        ]
+        for c in candidates:
+            if c.exists():
+                return str(c)
+        # Return the most likely path even if it doesn't exist yet; the init log will show the error
+        return str(ROOT_DIR / "Ai_engine")
 
     # Gemini LLM Integration for AI Assistant
     GEMINI_API_KEY: str = os.getenv("GEMINI_API_KEY", "")
