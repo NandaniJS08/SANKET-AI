@@ -13,10 +13,7 @@ import { createApiError } from "../adapters";
 import type { ApiError } from "../../types/api.types";
 
 export const API_BASE_URL =
-  import.meta.env.VITE_API_URL ||
-  (typeof window !== "undefined" && window.location.hostname !== "localhost"
-    ? "https://sanket-ai-backend.vercel.app/api/v1"
-    : "http://localhost:8000/api/v1");
+  import.meta.env.VITE_API_URL || "http://localhost:8000/api/v1";
 
 export interface RequestOptions extends RequestInit {
   timeoutMs?: number;
