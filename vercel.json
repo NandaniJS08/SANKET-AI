@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "backend/api/index.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "50mb",
+        "includeFiles": [
+          "backend/app/**",
+          "backend/requirements.txt",
+          "Ai_engine/src/**",
+          "Ai_engine/models/**"
+        ]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "backend/api/index.py"
+    }
+  ],
+  "env": {
+    "ML_ENGINE_PATH": "/var/task/Ai_engine"
+  }
+}
