@@ -1,0 +1,745 @@
+{
+  "portfolio_overview": {
+    "total_projects": 2100,
+    "delayed_projects": 1287,
+    "on_track_projects": 813,
+    "cost_overrun_projects": 582,
+    "critical_risk_projects": 268,
+    "total_original_cost_cr": 3960771.2,
+    "total_revised_cost_cr": 4595441.45,
+    "total_cumulative_expenditure_cr": 2262069.81,
+    "average_physical_progress_pct": 60.32,
+    "average_cost_revision_pct": 11.7
+  },
+  "portfolioOverview": {
+    "total_projects": 2100,
+    "delayed_projects": 1287,
+    "on_track_projects": 813,
+    "cost_overrun_projects": 582,
+    "critical_risk_projects": 268,
+    "total_original_cost_cr": 3960771.2,
+    "total_revised_cost_cr": 4595441.45,
+    "total_cumulative_expenditure_cr": 2262069.81,
+    "average_physical_progress_pct": 60.32,
+    "average_cost_revision_pct": 11.7
+  },
+  "ministry_comparison": [
+    {
+      "ministry": "Ministry of Road Transport & Highways",
+      "projects": 1135,
+      "delayed": 775,
+      "on_track": 360,
+      "avg_cost_revision_pct": 1.53,
+      "avg_physical_progress_pct": 66.19,
+      "total_revised_cost_cr": 1077022.19
+    },
+    {
+      "ministry": "Ministry of Railways",
+      "projects": 301,
+      "delayed": 142,
+      "on_track": 159,
+      "avg_cost_revision_pct": 23.91,
+      "avg_physical_progress_pct": 46.49,
+      "total_revised_cost_cr": 1058750.58
+    },
+    {
+      "ministry": "Ministry of Coal",
+      "projects": 135,
+      "delayed": 39,
+      "on_track": 96,
+      "avg_cost_revision_pct": 0.44,
+      "avg_physical_progress_pct": 40.69,
+      "total_revised_cost_cr": 264060.02
+    },
+    {
+      "ministry": "Ministry of Petroleum & Natural Gas",
+      "projects": 127,
+      "delayed": 72,
+      "on_track": 55,
+      "avg_cost_revision_pct": 14.11,
+      "avg_physical_progress_pct": 64.49,
+      "total_revised_cost_cr": 531830.94
+    },
+    {
+      "ministry": "Ministry of Power",
+      "projects": 114,
+      "delayed": 76,
+      "on_track": 38,
+      "avg_cost_revision_pct": 22.29,
+      "avg_physical_progress_pct": 47.08,
+      "total_revised_cost_cr": 562507.34
+    },
+    {
+      "ministry": "Ministry of Housing & Urban Affairs",
+      "projects": 65,
+      "delayed": 36,
+      "on_track": 29,
+      "avg_cost_revision_pct": 32.08,
+      "avg_physical_progress_pct": 56.17,
+      "total_revised_cost_cr": 434906.91
+    },
+    {
+      "ministry": "Department of Water Resources, River Development & GR",
+      "projects": 56,
+      "delayed": 49,
+      "on_track": 7,
+      "avg_cost_revision_pct": 121.67,
+      "avg_physical_progress_pct": 74.6,
+      "total_revised_cost_cr": 249290.42
+    },
+    {
+      "ministry": "Department of Higher Education",
+      "projects": 33,
+      "delayed": 21,
+      "on_track": 12,
+      "avg_cost_revision_pct": 8.6,
+      "avg_physical_progress_pct": 71.03,
+      "total_revised_cost_cr": 15607.83
+    },
+    {
+      "ministry": "Ministry of Civil Aviation",
+      "projects": 29,
+      "delayed": 18,
+      "on_track": 11,
+      "avg_cost_revision_pct": 4.45,
+      "avg_physical_progress_pct": 62.06,
+      "total_revised_cost_cr": 26189.14
+    },
+    {
+      "ministry": "Ministry of Health & Family Welfare",
+      "projects": 23,
+      "delayed": 2,
+      "on_track": 21,
+      "avg_cost_revision_pct": 43.06,
+      "avg_physical_progress_pct": 49.52,
+      "total_revised_cost_cr": 21471.0
+    },
+    {
+      "ministry": "Ministry of Steel",
+      "projects": 21,
+      "delayed": 10,
+      "on_track": 11,
+      "avg_cost_revision_pct": 7.59,
+      "avg_physical_progress_pct": 57.56,
+      "total_revised_cost_cr": 24261.13
+    },
+    {
+      "ministry": "Department of Telecommunications",
+      "projects": 16,
+      "delayed": 16,
+      "on_track": 0,
+      "avg_cost_revision_pct": 8.53,
+      "avg_physical_progress_pct": 93.63,
+      "total_revised_cost_cr": 275066.53
+    },
+    {
+      "ministry": "Ministry of Ports, Shipping and Waterways",
+      "projects": 15,
+      "delayed": 10,
+      "on_track": 5,
+      "avg_cost_revision_pct": 18.08,
+      "avg_physical_progress_pct": 62.03,
+      "total_revised_cost_cr": 24645.87
+    },
+    {
+      "ministry": "Ministry of Labour and Employment",
+      "projects": 15,
+      "delayed": 13,
+      "on_track": 2,
+      "avg_cost_revision_pct": 16.08,
+      "avg_physical_progress_pct": 65.31,
+      "total_revised_cost_cr": 3842.67
+    },
+    {
+      "ministry": "Ministry of Mines",
+      "projects": 10,
+      "delayed": 5,
+      "on_track": 5,
+      "avg_cost_revision_pct": 14.4,
+      "avg_physical_progress_pct": 46.44,
+      "total_revised_cost_cr": 15371.89
+    },
+    {
+      "ministry": "Department for Promotion of Industry & Internal Trade",
+      "projects": 4,
+      "delayed": 2,
+      "on_track": 2,
+      "avg_cost_revision_pct": 1.08,
+      "avg_physical_progress_pct": 53.85,
+      "total_revised_cost_cr": 10005.25
+    },
+    {
+      "ministry": "Department of Sports",
+      "projects": 1,
+      "delayed": 1,
+      "on_track": 0,
+      "avg_cost_revision_pct": -32.51,
+      "avg_physical_progress_pct": 96.5,
+      "total_revised_cost_cr": 611.74
+    }
+  ],
+  "ministryComparison": [
+    {
+      "ministry": "Ministry of Road Transport & Highways",
+      "projects": 1135,
+      "delayed": 775,
+      "on_track": 360,
+      "avg_cost_revision_pct": 1.53,
+      "avg_physical_progress_pct": 66.19,
+      "total_revised_cost_cr": 1077022.19
+    },
+    {
+      "ministry": "Ministry of Railways",
+      "projects": 301,
+      "delayed": 142,
+      "on_track": 159,
+      "avg_cost_revision_pct": 23.91,
+      "avg_physical_progress_pct": 46.49,
+      "total_revised_cost_cr": 1058750.58
+    },
+    {
+      "ministry": "Ministry of Coal",
+      "projects": 135,
+      "delayed": 39,
+      "on_track": 96,
+      "avg_cost_revision_pct": 0.44,
+      "avg_physical_progress_pct": 40.69,
+      "total_revised_cost_cr": 264060.02
+    },
+    {
+      "ministry": "Ministry of Petroleum & Natural Gas",
+      "projects": 127,
+      "delayed": 72,
+      "on_track": 55,
+      "avg_cost_revision_pct": 14.11,
+      "avg_physical_progress_pct": 64.49,
+      "total_revised_cost_cr": 531830.94
+    },
+    {
+      "ministry": "Ministry of Power",
+      "projects": 114,
+      "delayed": 76,
+      "on_track": 38,
+      "avg_cost_revision_pct": 22.29,
+      "avg_physical_progress_pct": 47.08,
+      "total_revised_cost_cr": 562507.34
+    },
+    {
+      "ministry": "Ministry of Housing & Urban Affairs",
+      "projects": 65,
+      "delayed": 36,
+      "on_track": 29,
+      "avg_cost_revision_pct": 32.08,
+      "avg_physical_progress_pct": 56.17,
+      "total_revised_cost_cr": 434906.91
+    },
+    {
+      "ministry": "Department of Water Resources, River Development & GR",
+      "projects": 56,
+      "delayed": 49,
+      "on_track": 7,
+      "avg_cost_revision_pct": 121.67,
+      "avg_physical_progress_pct": 74.6,
+      "total_revised_cost_cr": 249290.42
+    },
+    {
+      "ministry": "Department of Higher Education",
+      "projects": 33,
+      "delayed": 21,
+      "on_track": 12,
+      "avg_cost_revision_pct": 8.6,
+      "avg_physical_progress_pct": 71.03,
+      "total_revised_cost_cr": 15607.83
+    },
+    {
+      "ministry": "Ministry of Civil Aviation",
+      "projects": 29,
+      "delayed": 18,
+      "on_track": 11,
+      "avg_cost_revision_pct": 4.45,
+      "avg_physical_progress_pct": 62.06,
+      "total_revised_cost_cr": 26189.14
+    },
+    {
+      "ministry": "Ministry of Health & Family Welfare",
+      "projects": 23,
+      "delayed": 2,
+      "on_track": 21,
+      "avg_cost_revision_pct": 43.06,
+      "avg_physical_progress_pct": 49.52,
+      "total_revised_cost_cr": 21471.0
+    },
+    {
+      "ministry": "Ministry of Steel",
+      "projects": 21,
+      "delayed": 10,
+      "on_track": 11,
+      "avg_cost_revision_pct": 7.59,
+      "avg_physical_progress_pct": 57.56,
+      "total_revised_cost_cr": 24261.13
+    },
+    {
+      "ministry": "Department of Telecommunications",
+      "projects": 16,
+      "delayed": 16,
+      "on_track": 0,
+      "avg_cost_revision_pct": 8.53,
+      "avg_physical_progress_pct": 93.63,
+      "total_revised_cost_cr": 275066.53
+    },
+    {
+      "ministry": "Ministry of Ports, Shipping and Waterways",
+      "projects": 15,
+      "delayed": 10,
+      "on_track": 5,
+      "avg_cost_revision_pct": 18.08,
+      "avg_physical_progress_pct": 62.03,
+      "total_revised_cost_cr": 24645.87
+    },
+    {
+      "ministry": "Ministry of Labour and Employment",
+      "projects": 15,
+      "delayed": 13,
+      "on_track": 2,
+      "avg_cost_revision_pct": 16.08,
+      "avg_physical_progress_pct": 65.31,
+      "total_revised_cost_cr": 3842.67
+    },
+    {
+      "ministry": "Ministry of Mines",
+      "projects": 10,
+      "delayed": 5,
+      "on_track": 5,
+      "avg_cost_revision_pct": 14.4,
+      "avg_physical_progress_pct": 46.44,
+      "total_revised_cost_cr": 15371.89
+    },
+    {
+      "ministry": "Department for Promotion of Industry & Internal Trade",
+      "projects": 4,
+      "delayed": 2,
+      "on_track": 2,
+      "avg_cost_revision_pct": 1.08,
+      "avg_physical_progress_pct": 53.85,
+      "total_revised_cost_cr": 10005.25
+    },
+    {
+      "ministry": "Department of Sports",
+      "projects": 1,
+      "delayed": 1,
+      "on_track": 0,
+      "avg_cost_revision_pct": -32.51,
+      "avg_physical_progress_pct": 96.5,
+      "total_revised_cost_cr": 611.74
+    }
+  ],
+  "sector_data": [
+    {
+      "name": "Roads & Highways",
+      "sector": "Roads & Highways",
+      "projects": 1135,
+      "delayed": 775,
+      "on_track": 360,
+      "avg_physical_progress_pct": 66.19,
+      "total_revised_cost_cr": 1077022.19
+    },
+    {
+      "name": "Railways",
+      "sector": "Railways",
+      "projects": 296,
+      "delayed": 140,
+      "on_track": 156,
+      "avg_physical_progress_pct": 46.57,
+      "total_revised_cost_cr": 1046048.58
+    },
+    {
+      "name": "Coal",
+      "sector": "Coal",
+      "projects": 249,
+      "delayed": 115,
+      "on_track": 134,
+      "avg_physical_progress_pct": 43.62,
+      "total_revised_cost_cr": 826567.36
+    },
+    {
+      "name": "Energy Storage",
+      "sector": "Energy Storage",
+      "projects": 127,
+      "delayed": 72,
+      "on_track": 55,
+      "avg_physical_progress_pct": 64.49,
+      "total_revised_cost_cr": 531830.94
+    },
+    {
+      "name": "Construction",
+      "sector": "Construction",
+      "projects": 75,
+      "delayed": 41,
+      "on_track": 34,
+      "avg_physical_progress_pct": 54.87,
+      "total_revised_cost_cr": 450278.8
+    },
+    {
+      "name": "Waste & Water",
+      "sector": "Waste & Water",
+      "projects": 56,
+      "delayed": 49,
+      "on_track": 7,
+      "avg_physical_progress_pct": 74.6,
+      "total_revised_cost_cr": 249290.42
+    },
+    {
+      "name": "Healthcare",
+      "sector": "Healthcare",
+      "projects": 53,
+      "delayed": 25,
+      "on_track": 28,
+      "avg_physical_progress_pct": 57.53,
+      "total_revised_cost_cr": 49959.54
+    },
+    {
+      "name": "Education",
+      "sector": "Education",
+      "projects": 34,
+      "delayed": 22,
+      "on_track": 12,
+      "avg_physical_progress_pct": 71.78,
+      "total_revised_cost_cr": 16219.57
+    },
+    {
+      "name": "Aviation & Aviation Infrastructure",
+      "sector": "Aviation & Aviation Infrastructure",
+      "projects": 29,
+      "delayed": 18,
+      "on_track": 11,
+      "avg_physical_progress_pct": 62.06,
+      "total_revised_cost_cr": 26189.14
+    },
+    {
+      "name": "Metals & Mining",
+      "sector": "Metals & Mining",
+      "projects": 21,
+      "delayed": 10,
+      "on_track": 11,
+      "avg_physical_progress_pct": 57.56,
+      "total_revised_cost_cr": 24261.13
+    },
+    {
+      "name": "Telecommunication",
+      "sector": "Telecommunication",
+      "projects": 16,
+      "delayed": 16,
+      "on_track": 0,
+      "avg_physical_progress_pct": 93.63,
+      "total_revised_cost_cr": 275066.53
+    },
+    {
+      "name": "Inland Waterways",
+      "sector": "Inland Waterways",
+      "projects": 5,
+      "delayed": 2,
+      "on_track": 3,
+      "avg_physical_progress_pct": 41.8,
+      "total_revised_cost_cr": 12702.0
+    },
+    {
+      "name": "Logistics Infrastructure",
+      "sector": "Logistics Infrastructure",
+      "projects": 3,
+      "delayed": 1,
+      "on_track": 2,
+      "avg_physical_progress_pct": 39.34,
+      "total_revised_cost_cr": 4604.25
+    },
+    {
+      "name": "Real Estate",
+      "sector": "Real Estate",
+      "projects": 1,
+      "delayed": 1,
+      "on_track": 0,
+      "avg_physical_progress_pct": 97.4,
+      "total_revised_cost_cr": 5401.0
+    }
+  ],
+  "sectorData": [
+    {
+      "name": "Roads & Highways",
+      "sector": "Roads & Highways",
+      "projects": 1135,
+      "delayed": 775,
+      "on_track": 360,
+      "avg_physical_progress_pct": 66.19,
+      "total_revised_cost_cr": 1077022.19
+    },
+    {
+      "name": "Railways",
+      "sector": "Railways",
+      "projects": 296,
+      "delayed": 140,
+      "on_track": 156,
+      "avg_physical_progress_pct": 46.57,
+      "total_revised_cost_cr": 1046048.58
+    },
+    {
+      "name": "Coal",
+      "sector": "Coal",
+      "projects": 249,
+      "delayed": 115,
+      "on_track": 134,
+      "avg_physical_progress_pct": 43.62,
+      "total_revised_cost_cr": 826567.36
+    },
+    {
+      "name": "Energy Storage",
+      "sector": "Energy Storage",
+      "projects": 127,
+      "delayed": 72,
+      "on_track": 55,
+      "avg_physical_progress_pct": 64.49,
+      "total_revised_cost_cr": 531830.94
+    },
+    {
+      "name": "Construction",
+      "sector": "Construction",
+      "projects": 75,
+      "delayed": 41,
+      "on_track": 34,
+      "avg_physical_progress_pct": 54.87,
+      "total_revised_cost_cr": 450278.8
+    },
+    {
+      "name": "Waste & Water",
+      "sector": "Waste & Water",
+      "projects": 56,
+      "delayed": 49,
+      "on_track": 7,
+      "avg_physical_progress_pct": 74.6,
+      "total_revised_cost_cr": 249290.42
+    },
+    {
+      "name": "Healthcare",
+      "sector": "Healthcare",
+      "projects": 53,
+      "delayed": 25,
+      "on_track": 28,
+      "avg_physical_progress_pct": 57.53,
+      "total_revised_cost_cr": 49959.54
+    },
+    {
+      "name": "Education",
+      "sector": "Education",
+      "projects": 34,
+      "delayed": 22,
+      "on_track": 12,
+      "avg_physical_progress_pct": 71.78,
+      "total_revised_cost_cr": 16219.57
+    },
+    {
+      "name": "Aviation & Aviation Infrastructure",
+      "sector": "Aviation & Aviation Infrastructure",
+      "projects": 29,
+      "delayed": 18,
+      "on_track": 11,
+      "avg_physical_progress_pct": 62.06,
+      "total_revised_cost_cr": 26189.14
+    },
+    {
+      "name": "Metals & Mining",
+      "sector": "Metals & Mining",
+      "projects": 21,
+      "delayed": 10,
+      "on_track": 11,
+      "avg_physical_progress_pct": 57.56,
+      "total_revised_cost_cr": 24261.13
+    },
+    {
+      "name": "Telecommunication",
+      "sector": "Telecommunication",
+      "projects": 16,
+      "delayed": 16,
+      "on_track": 0,
+      "avg_physical_progress_pct": 93.63,
+      "total_revised_cost_cr": 275066.53
+    },
+    {
+      "name": "Inland Waterways",
+      "sector": "Inland Waterways",
+      "projects": 5,
+      "delayed": 2,
+      "on_track": 3,
+      "avg_physical_progress_pct": 41.8,
+      "total_revised_cost_cr": 12702.0
+    },
+    {
+      "name": "Logistics Infrastructure",
+      "sector": "Logistics Infrastructure",
+      "projects": 3,
+      "delayed": 1,
+      "on_track": 2,
+      "avg_physical_progress_pct": 39.34,
+      "total_revised_cost_cr": 4604.25
+    },
+    {
+      "name": "Real Estate",
+      "sector": "Real Estate",
+      "projects": 1,
+      "delayed": 1,
+      "on_track": 0,
+      "avg_physical_progress_pct": 97.4,
+      "total_revised_cost_cr": 5401.0
+    }
+  ],
+  "cost_overrun_trend": [
+    {
+      "reporting_month": "2025-07-01",
+      "month": "Jul 2025",
+      "avg_cost_revision_pct": 56.71,
+      "avg_physical_progress_pct": 46.88,
+      "total_expenditure_cr": 1510700.4,
+      "snapshots_count": 791
+    },
+    {
+      "reporting_month": "2025-08-01",
+      "month": "Aug 2025",
+      "avg_cost_revision_pct": 18.06,
+      "avg_physical_progress_pct": 49.17,
+      "total_expenditure_cr": 1537609.41,
+      "snapshots_count": 800
+    },
+    {
+      "reporting_month": "2025-09-01",
+      "month": "Sep 2025",
+      "avg_cost_revision_pct": 18.22,
+      "avg_physical_progress_pct": 50.99,
+      "total_expenditure_cr": 1585711.84,
+      "snapshots_count": 794
+    },
+    {
+      "reporting_month": "2025-10-01",
+      "month": "Oct 2025",
+      "avg_cost_revision_pct": 17.91,
+      "avg_physical_progress_pct": 50.73,
+      "total_expenditure_cr": 1611187.8,
+      "snapshots_count": 820
+    },
+    {
+      "reporting_month": "2025-11-01",
+      "month": "Nov 2025",
+      "avg_cost_revision_pct": 17.89,
+      "avg_physical_progress_pct": 50.84,
+      "total_expenditure_cr": 1574941.92,
+      "snapshots_count": 823
+    },
+    {
+      "reporting_month": "2025-12-01",
+      "month": "Dec 2025",
+      "avg_cost_revision_pct": 11.26,
+      "avg_physical_progress_pct": 55.66,
+      "total_expenditure_cr": 1901162.6,
+      "snapshots_count": 1392
+    },
+    {
+      "reporting_month": "2026-01-01",
+      "month": "Jan 2026",
+      "avg_cost_revision_pct": 9.72,
+      "avg_physical_progress_pct": 57.34,
+      "total_expenditure_cr": 2001892.91,
+      "snapshots_count": 1702
+    },
+    {
+      "reporting_month": "2026-02-01",
+      "month": "Feb 2026",
+      "avg_cost_revision_pct": 8.76,
+      "avg_physical_progress_pct": 58.04,
+      "total_expenditure_cr": 1971455.82,
+      "snapshots_count": 1948
+    },
+    {
+      "reporting_month": "2026-03-01",
+      "month": "Mar 2026",
+      "avg_cost_revision_pct": 8.63,
+      "avg_physical_progress_pct": 60.3,
+      "total_expenditure_cr": 1992963.63,
+      "snapshots_count": 1941
+    }
+  ],
+  "costOverrunTrend": [
+    {
+      "reporting_month": "2025-07-01",
+      "month": "Jul 2025",
+      "avg_cost_revision_pct": 56.71,
+      "avg_physical_progress_pct": 46.88,
+      "total_expenditure_cr": 1510700.4,
+      "snapshots_count": 791
+    },
+    {
+      "reporting_month": "2025-08-01",
+      "month": "Aug 2025",
+      "avg_cost_revision_pct": 18.06,
+      "avg_physical_progress_pct": 49.17,
+      "total_expenditure_cr": 1537609.41,
+      "snapshots_count": 800
+    },
+    {
+      "reporting_month": "2025-09-01",
+      "month": "Sep 2025",
+      "avg_cost_revision_pct": 18.22,
+      "avg_physical_progress_pct": 50.99,
+      "total_expenditure_cr": 1585711.84,
+      "snapshots_count": 794
+    },
+    {
+      "reporting_month": "2025-10-01",
+      "month": "Oct 2025",
+      "avg_cost_revision_pct": 17.91,
+      "avg_physical_progress_pct": 50.73,
+      "total_expenditure_cr": 1611187.8,
+      "snapshots_count": 820
+    },
+    {
+      "reporting_month": "2025-11-01",
+      "month": "Nov 2025",
+      "avg_cost_revision_pct": 17.89,
+      "avg_physical_progress_pct": 50.84,
+      "total_expenditure_cr": 1574941.92,
+      "snapshots_count": 823
+    },
+    {
+      "reporting_month": "2025-12-01",
+      "month": "Dec 2025",
+      "avg_cost_revision_pct": 11.26,
+      "avg_physical_progress_pct": 55.66,
+      "total_expenditure_cr": 1901162.6,
+      "snapshots_count": 1392
+    },
+    {
+      "reporting_month": "2026-01-01",
+      "month": "Jan 2026",
+      "avg_cost_revision_pct": 9.72,
+      "avg_physical_progress_pct": 57.34,
+      "total_expenditure_cr": 2001892.91,
+      "snapshots_count": 1702
+    },
+    {
+      "reporting_month": "2026-02-01",
+      "month": "Feb 2026",
+      "avg_cost_revision_pct": 8.76,
+      "avg_physical_progress_pct": 58.04,
+      "total_expenditure_cr": 1971455.82,
+      "snapshots_count": 1948
+    },
+    {
+      "reporting_month": "2026-03-01",
+      "month": "Mar 2026",
+      "avg_cost_revision_pct": 8.63,
+      "avg_physical_progress_pct": 60.3,
+      "total_expenditure_cr": 1992963.63,
+      "snapshots_count": 1941
+    }
+  ],
+  "missing_metrics_report": {
+    "sector_radar_data": "Omitted from database derivation: radar attributes ('Clearance Speed', 'Budget Discipline', 'Milestone Velocity', 'Schedule Adherence') are arbitrary UI scores not stored in PostgreSQL.",
+    "historical_risk_trend": "Omitted from database derivation: project_monthly_snapshots records physical progress, cost revisions, and expenditure but does NOT record monthly historical ML risk scores or risk band counts."
+  },
+  "cached_at": 1789966181.7229657
+}

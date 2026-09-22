@@ -1,0 +1,72 @@
+# ==============================================================================
+# SANKET-AI Monorepo — Root .gitignore
+# Prevents secrets, build artifacts, and caches from being committed.
+# ==============================================================================
+
+# ── Environment / Secrets (NEVER commit real .env files) ──────────────────────
+.env
+.env.*
+*.env
+!.env.example
+!**/.env.example
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.so
+.eggs/
+pip-wheel-metadata/
+.mypy_cache/
+.dmypy.json
+.pytest_cache/
+.hypothesis/
+.ruff_cache/
+
+# ── Node / Frontend ───────────────────────────────────────────────────────────
+node_modules/
+dist/
+.cache/
+.parcel-cache/
+.vite/
+*.tsbuildinfo
+
+# ── IDE / OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ── Coverage / Testing ────────────────────────────────────────────────────────
+.coverage
+htmlcov/
+coverage/
+*.lcov
+
+# ── Jupyter ───────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# Historical / non-runtime ML model artifacts
+Ai_engine/models_corrected/
+Ai_engine/models_backup_phase16/
+
+# Local Python virtual environment
+Ai_engine/venv/
+backend/venv/

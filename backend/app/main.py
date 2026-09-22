@@ -1,0 +1,100 @@
+"""
+SANKET-AI Platform Backend — FastAPI Application Root
+"""
+
+from typing import Optional
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from app.core.config import settings
+from app.db.supabase import get_supabase_optional
+
+from app.routes.auth import router as auth_router
+from app.routes.projects import router as projects_router
+from app.routes.predictions import router as predictions_router
+from app.routes.warnings import router as warnings_router
+from app.routes.actions import router as actions_router
+from app.routes.analytics import router as analytics_router
+from app.routes.ai_assistant import router as ai_assistant_router
+
+app = FastAPI(
+
+    title=settings.PROJECT_NAME,
+    version=settings.VERSION,
+    description="Explainable AI-powered Infrastructure Project Risk Prediction & Monitoring Platform — SIH26103",
+    docs_url="/docs",
+    redoc_url="/redoc"
+)
+
+# CORS Middleware (Supports local dev + production deployment domains)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.CORS_ORIGINS,
+    allow_origin_regex=r"https?://.*",
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+
+@app.get("/", tags=["System"])
+def root():
+    return {
+        "service": settings.PROJECT_NAME,
+        "version": settings.VERSION,
+        "status": "online",
+        "docs": "/docs"
+    }
+
+
+@app.get("/health", tags=["System"])
+def health():
+    db_status = "unconfigured"
+    if settings.is_supabase_configured():
+        client = get_supabase_optional()
+        if client:
+            try:
+                res = client.table("projects").select("project_id").limit(1).execute()
+                db_status = "connected" if res is not None else "degraded"
+            except Exception:
+                db_status = "unreachable"
+        else:
+            db_status = "initialization_failed"
+
+    return {
+        "status": "healthy" if db_status in ("connected", "unconfigured") else "degraded",
+        "service": settings.PROJECT_NAME,
+        "version": settings.VERSION,
+        "database": db_status
+    }
+
+
+# Mount API Routers under /api/v1
+API_V1 = "/api/v1"
+app.include_router(auth_router, prefix=API_V1)
+app.include_router(projects_router, prefix=API_V1)
+app.include_router(predictions_router, prefix=API_V1)
+app.include_router(warnings_router, prefix=API_V1)
+app.include_router(actions_router, prefix=API_V1)
+app.include_router(analytics_router, prefix=API_V1)
+app.include_router(ai_assistant_router, prefix=API_V1)
+
+
+# Frontend compatibility alias: /api/v1/early-warnings -> warning_service.get_active_warnings
+@app.get(f"{API_V1}/early-warnings", tags=["Early Warnings"], summary="Frontend compatibility alias for early warnings")
+def early_warnings_frontend_alias(
+    severity: Optional[str] = None,
+    warning_type: Optional[str] = None,
+    project_id: Optional[str] = None,
+    page: int = 1,
+    page_size: int = 50,
+):
+    from app.services.warnings import warning_service
+    return warning_service.get_active_warnings(
+        severity=severity,
+        warning_type=warning_type,
+        project_id=project_id,
+        page=page,
+        page_size=page_size,
+    )

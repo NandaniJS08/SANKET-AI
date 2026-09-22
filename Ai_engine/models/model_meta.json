@@ -1,0 +1,79 @@
+{
+  "model_version": "Random Forest v1.0 + TreeSHAP (Promoted)",
+  "validation_method": "GroupShuffleSplit by stable_id",
+  "terminal_rows_excluded": "n_future == 0",
+  "trained_samples": 11772,
+  "test_samples": 3043,
+  "unique_train_projects": 2365,
+  "unique_test_projects": 592,
+  "project_overlap": 0,
+  "feature_columns": [
+    "log_original_cost",
+    "multi_state",
+    "agency_freq",
+    "sector_freq",
+    "ministry_freq",
+    "approval_to_start_months",
+    "approval_year",
+    "planned_duration_months",
+    "age_at_t_months",
+    "cost_overrun_so_far_pct",
+    "cost_already_revised",
+    "expenditure_vs_revised",
+    "progress_pct",
+    "progress_vs_expected",
+    "time_overrun_months",
+    "deadline_revised_so_far",
+    "total_doc_push_months",
+    "months_to_revised_doc",
+    "spend_vs_progress",
+    "exp_per_pct",
+    "progress_rate_3m",
+    "spend_rate_3m",
+    "cost_change_3m",
+    "progress_stall",
+    "doc_push_recent",
+    "cost_revisions_so_far"
+  ],
+  "metrics": {
+    "high_risk": {
+      "accuracy": 0.8366743345382845,
+      "precision": 0.7449494949494949,
+      "recall": 0.6666666666666666,
+      "f1": 0.7036374478234944,
+      "roc_auc": 0.8915228056947476,
+      "confusion_matrix": {
+        "tn": 1956,
+        "fp": 202,
+        "fn": 295,
+        "tp": 590
+      }
+    },
+    "deadline_slip": {
+      "accuracy": 0.837660203746303,
+      "precision": 0.7315521628498728,
+      "recall": 0.6701631701631702,
+      "f1": 0.6995133819951338,
+      "roc_auc": 0.8868914457015145,
+      "confusion_matrix": {
+        "tn": 1974,
+        "fp": 211,
+        "fn": 283,
+        "tp": 575
+      }
+    },
+    "cost_escalation": {
+      "accuracy": 0.979625369700953,
+      "precision": 0.625,
+      "recall": 0.6097560975609756,
+      "f1": 0.6172839506172839,
+      "roc_auc": 0.9383407055955058,
+      "confusion_matrix": {
+        "tn": 2931,
+        "fp": 30,
+        "fn": 32,
+        "tp": 50
+      }
+    }
+  }
+}
